@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lemony | Portfolio</title>
+    <meta
+      name="description"
+      content="Lemony kişisel portfolyo sitesi. Frontend geliştirici, tasarım ve web teknolojileri üzerine çalışmalar."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">Lemony</div>
+        <nav class="nav-links" aria-label="Ana menü">
+          <a href="#about">Hakkımda</a>
+          <a href="#skills">Yetenekler</a>
+          <a href="#projects">Projeler</a>
+          <a href="#contact">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Merhaba, ben Lemony</p>
+            <h1>Web deneyimlerini <span>güzel</span> ve işlevsel şekilde tasarlıyorum.</h1>
+            <p class="subtitle">
+              Frontend alanında çalışıyorum; kullanıcı odaklı, hızlı ve modern web çözümleri üretmeye odaklanıyorum.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#projects">Projelerim</a>
+              <a class="btn secondary" href="#contact">İletişime geç</a>
+            </div>
+            <ul class="mini-stats" aria-label="Özet istatistikler">
+              <li><strong>2+</strong><span>Yıl deneyim</span></li>
+              <li><strong>10+</strong><span>Tamamlanan proje</span></li>
+              <li><strong>100%</strong><span>Odaklı çalışma</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Profil kartı">
+            <div class="card-glow"></div>
+            <div class="avatar">L</div>
+            <h2>Lemony</h2>
+            <p>Frontend Developer</p>
+            <div class="badge-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container section-grid">
+          <div>
+            <p class="section-tag">Hakkımda</p>
+            <h2>Geliştirme ve tasarım arasında köprü kuruyorum.</h2>
+          </div>
+          <div>
+            <p>
+              Kod yazmayı ve kullanıcı deneyimini iyileştirmeyi seviyorum. Temiz yapılar,
+              erişilebilir tasarım ve modern arayüzler üzerine çalışıyorum.
+            </p>
+            <p>
+              Kendi projelerimde sade, etkili ve hızlı çalışan çözümler üretmeye özen gösteriyorum.
+              Mobil uyumlu ve estetik arayüzler tasarlamak benim için önemli.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section muted">
+        <div class="container">
+          <p class="section-tag">Yetenekler</p>
+          <h2>Çalışma alanlarım</h2>
+          <div class="skill-grid">
+            <div class="skill-card">
+              <h3>Frontend</h3>
+              <p>HTML5, CSS3, JavaScript, responsive tasarım, modern UI.</p>
+            </div>
+            <div class="skill-card">
+              <h3>UI/UX</h3>
+              <p>Kullanıcı odaklı tasarım, wireframe, görsel hiyerarşi ve akış.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Performans</h3>
+              <p>Sayfa hızı, optimizasyon, kullanım kolaylığı ve sorunsuz deneyim.</p>
+            </div>
+            <div class="skill-card">
+              <h3>İş Birliği</h3>
+              <p>Takım çalışması, fikir geliştirme, sorunsuz iletişim ve sürdürülebilir çözümler.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="section-tag">Projeler</p>
+          <h2>Son çalışmalarım</h2>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-visual one"></div>
+              <div class="project-content">
+                <h3>Portfolio Website</h3>
+                <p>Özgeçmiş ve proje gösterimi için sade ve modern kişisel web sitesi.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-visual two"></div>
+              <div class="project-content">
+                <h3>Landing Page</h3>
+                <p>Ürün tanıtımı ve marka görünürlüğü için yüksek dönüşüm odaklı landing sayfası.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-visual three"></div>
+              <div class="project-content">
+                <h3>Dashboard UI</h3>
+                <p>Veri ve yönetim arayüzleri için net, okunabilir ve estetik tasarımlar.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="section-tag">İletişim</p>
+          <h2>Bir işbirliği için konuşalım.</h2>
+        </div>
+        <a class="btn primary" href="mailto:hello@lemony.dev">hello@lemony.dev</a>
+      </div>
+    </footer>
+  </body>
+</html>
