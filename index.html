@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="code/style.css">
+    <title>@lemony</title>
+</head>
+<body>
+<script>
+  const title = "@lemony";
+  let ss = 0;
+
+  function typewrite() {
+    if (ss < title.length) {
+      document.title = title.slice(0, ss + 1);
+      ss++;
+      setTimeout(typewrite, 300);
+    } else {
+      setTimeout(() => {
+        document.title = "";
+        ss = 0;
+        typewrite();
+      }, 2000);
+    }
+  }
+
+  typewrite();
+</script>
+    <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Lemony
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="#home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Anasayfa</a>
+                <a href="#projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Projeler</a>
+                <a href="#contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">İletişim</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Anasayfa</a>
+                <a href="#projects">Projeler</a>
+                <a href="#contact">İletişim</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>    
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Lemony</h1>
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">Kendi halinde takılan bir geliştirici.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Lemony-Dev" target="_blank" rel="noreferrer" aria-label="GitHub" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@LemonyDev" target="_blank" rel="noreferrer" aria-label="YouTube" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="sg/pp.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="info-section">
+        <div class="container">
+            <div class="section-heading" data-aos="fade-up">
+                <span>Projeler</span>
+                <h2>Son çalışmalarım</h2>
+            </div>
+            <div class="projects-grid">
+                <a class="project-card" href="https://snownw.net" target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-visual-wrap">
+                        <img class="project-visual" src="img/snownetwork.png">
+                        <span class="project-tag">Geliştirici</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>SnowNetwork</h3>
+                        <p>Minecraft sunucusu.</p>
+                    </div>
+                </a>
+                <a class="project-card" href="https://discord.gg/kt3TrcdYrw" target="_blank" rel="noreferrer" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-visual-wrap">
+                        <img class="project-visual" src="img/stl.png">
+                        <span class="project-tag founder">Kurucu</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>STL</h3>
+                        <p>Minecraft plugin paketi | Web sitesi | Discord bot hizmetleri.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="info-section muted">
+        <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;">
+            <div>
+                <span style="display:block; margin-bottom:8px; color: var(--secondary); letter-spacing:0.12em; text-transform:uppercase; font-size:0.75rem;">İletişim</span>
+                <h2 style="font-size:clamp(1.8rem, 2vw, 2.4rem);">Bir iş birliği için konuşalım.</h2>
+            </div>
+            <a href="https://discord.gg/kt3TrcdYrw" class="btn-contact">DC : lemonydev</a>
+        </div>
+    </footer>
+
+    <script src="code/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+</body>
+</html>
